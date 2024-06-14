@@ -1,0 +1,63 @@
+---
+title: "Attributes"
+description: Set the attributes of a node.
+---
+
+### Class
+
+- `tria-class`
+
+Toggle classes of a Node.
+
+#### Examples
+1.  ##### Markup
+    ```html
+    <main tria-class="[`article`, category]">
+      <p>Ladies and gentlemen...</p>
+    </main>
+    ```
+
+    ##### Metadata
+    ```json
+    {
+      "category": "tech"
+    }
+    ```
+
+#### Definition
+| Attribute                  |
+| -------------------------- |
+| `tria-class = <expression> \| [...<expression>]` |
+
+### Attributes
+
+- `tria-attr`
+
+Sets the attributes of a Node.
+
+#### Examples
+1.  ##### Markup
+    ```html
+    <main
+      tria-attr="[
+        class:`article ${category}`,
+        style:`color: ${categoryColor}`
+      ]"
+    >
+      <p tria-attr="title:articleTitle">Ladies and gentlemen...</p>
+    </main>
+    ```
+
+    ##### Metadata
+    ```json
+    {
+      "category": "tech",
+      "categoryColor": "blue",
+      "articleTitle": "Some title..."
+    }
+    ```
+
+#### Definition
+| Attribute                  |
+| -------------------------- |
+| `tria-attr = <attribute-name>:<expression> \| [...<attribute-name>:<expression>]` |
