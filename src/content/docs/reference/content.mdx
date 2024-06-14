@@ -1,0 +1,56 @@
+---
+title: "Content"
+description: Set inner content on a node.
+---
+
+### Inner HTML
+
+- `tria-html`
+
+Sets the `innerHTML` of the Node.
+
+#### Examples
+1.  ##### Markup
+    ```html
+    <main tria-html="articleHtml">
+      <p>Ladies and gentlemen...</p>
+    </main>
+    ```
+
+    ##### Metadata
+    ```json
+    {
+      "articleHtml": "<p>Ladies and gentlemen...</p>"
+    }
+    ```
+
+#### Definition
+| Attribute                  |
+| -------------------------- |
+| `tria-html = <expression>` |
+
+### Text Content
+
+- `tria-text`
+
+Sets the `textContent` of the Node.
+
+#### Examples
+1.  ##### Markup
+    ```html
+    <main>
+      <p tria-text="articleText">Ladies and gentlemen...</p>
+    </main>
+    ```
+
+    ##### Metadata
+    ```json
+    {
+      "articleText": "Ladies and gentlemen..."
+    }
+    ```
+
+#### Definition
+| Attribute                  |
+| -------------------------- |
+| `tria-text = <expression>` |
